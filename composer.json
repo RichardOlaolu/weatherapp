@@ -1,0 +1,17 @@
+{
+    "name": "richardolaolu/weatherapp",
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Richardolaolu\\Weatherapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RichardOlaolu",
+            "email": "oladipupoayomikun24@gmail.com"
+        }
+    ]
+}
