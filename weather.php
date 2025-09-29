@@ -1,4 +1,5 @@
 <?php
+use Richardolaolu\Weatherapp\Weatherservice;
 
 require_once __DIR__ . '/vendor/autoload.php';
 

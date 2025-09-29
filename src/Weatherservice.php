@@ -1,14 +1,14 @@
 <?php
 
-//namespace richardolaolu\weatherapp;
+namespace Richardolaolu\weatherapp;
 
 use GuzzleHttp\Client;
 
 class Weatherservice {
     private Client $client;
     public function __construct(
-        private $apiKey = ' 7246de415ccc5d4ff9c4fbb2852575d6',
-        private $apiUrl = 'https://api.openweathermap.org/data/2.5/weather',
+        private $apiKey = 'eceb0fb96323e390a38e84f735f4f650',
+        private $apiUrl = 'https://api.openweathermap.org/data/2.5/weather'
     ) {
         $this->client = new Client([]);
     }
