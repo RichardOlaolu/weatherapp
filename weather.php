@@ -3,8 +3,13 @@ use Richardolaolu\Weatherapp\Weatherservice;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+if ($argc < 2) {
+    echo "Usage: php weather.php <city>\n";
+    exit(1);
+}
+
 $weatherService = new Weatherservice();
-$city = 'London';
+$city = $argv['1'];
 echo "Fetching weather for $city\n";
 $weather = $weatherService->getWeather($city);
 
